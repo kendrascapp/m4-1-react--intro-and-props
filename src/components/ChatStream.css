@@ -1,12 +1,25 @@
-/*
-  The current user's messages should have:
-  - a text color of #FFF
-  - a background color of #1185f7
-
-  Other participant's messages should have:
-  - a text color of #000
-  - a background color of #e9e9eb
-*/
 .chat-stream {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.current-user-message {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.current-user-message .bubble {
+  color: #fff;
+  background-color: #1185f7;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: auto;
+}
+
+.other-user-message .bubble {
+  color: #000;
+  background-color: #e9e9eb;
+  border-radius: 5px;
+  padding: 5px;
 }
